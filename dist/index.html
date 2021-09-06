@@ -6,13 +6,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
+  <!--<script src="js/typewriter.js" defer></script>-->
   <script src="https://kit.fontawesome.com/a2a6651e59.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <title>Warren Joseph Ramos | Web Developer</title>
 </head>
 
 <body>
-  <h1>Warren</h1>
+  <!-- Header -->
+  <!-- header-home b/c the home page and the inner pages are very different in terms of the header in the menu -->
+  <header id="header-home">
+    <!-- utility class to center content -->
+    <div class="container">
+      <nav id="main-nav">
+        <img src="img/logo.png" alt="WR" id="logo">
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="interests.html">Interests</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-content">
+        <!-- Typing text animation used in the span from Brad's course -->
+        <h1>Warren Joseph Ramos
+          <span class="txt-type" data-wait="3000" data-words='["Web Developer", "Recent Graduate"]'>
+          </span>
+        </h1>
+        <p class="lead">MSUDenver alumni with an interest for web development</p>
+        <a href="projects.html" class="btn-light">View my work</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section A: -->
 </body>
 
 </html>
