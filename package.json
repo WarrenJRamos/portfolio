@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Warren's porfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WarrenJRamos/portfolio.git"
+  },
+  "author": "Warren Joseph Ramos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WarrenJRamos/portfolio/issues"
+  },
+  "homepage": "https://github.com/WarrenJRamos/portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

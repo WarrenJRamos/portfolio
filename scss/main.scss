@@ -1,0 +1,29 @@
+@import 'config';
+
+// General styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: white;   //line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2 h3, h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
