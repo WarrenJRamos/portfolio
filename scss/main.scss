@@ -8,7 +8,8 @@
   padding: 0;
 }
 
-body {
+html, body {
+  height: 100%;
   font-family: 'Roboto', monospace;
   background: white;   
   line-height: 1.5;
@@ -111,9 +112,25 @@ img {
 
   // Header inner
   &-inner {
+    position: relative;
     background: $bg-image no-repeat 10% 0% / cover;
     height: 5.5rem;
     border-bottom: 3px solid $main-color;
+  }
+
+  &-inner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  &-inner * {
+    z-index: 100;
   }
 }
 
@@ -350,3 +367,6 @@ img {
     }
   }
 }
+
+// Import media queries
+@import 'media';

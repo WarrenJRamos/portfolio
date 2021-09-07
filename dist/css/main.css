@@ -169,7 +169,8 @@ input[class^='btn-']:hover {
   margin: 0;
   padding: 0; }
 
-body {
+html, body {
+  height: 100%;
   font-family: 'Roboto', monospace;
   background: white;
   line-height: 1.5; }
@@ -242,9 +243,23 @@ img {
   z-index: 100; }
 
 #header-inner {
+  position: relative;
   background: url("../img/showcase.jpg") no-repeat 10% 0%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #43df2e; }
+
+#header-inner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1; }
+
+#header-inner * {
+  z-index: 100; }
 
 #about-a .about-info {
   display: grid;
@@ -399,3 +414,55 @@ img {
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover, #main-footer .footer-content .social .far:hover {
         background: #43df2e; }
+
+@media (max-width: 1000px) {
+  #header-home {
+    height: 80vh; } }
+
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem; }
+  #contact-a .text-fields {
+    grid-template-areas: 'name' 'email' 'subject' 'phone' 'message'; }
+  #about-a .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #about-a .about-info .bio-image {
+      max-width: 600px; }
+  .items {
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center; }
+    #main-nav li {
+      padding: 1rem; }
+  #header-home {
+    background-position: 80% 0px; }
+    #header-home .header-content h1 {
+      display: none; }
+  #header-inner {
+    height: 10rem; }
+  #contact-a .text-fields {
+    grid-template-areas: 'name' 'email' 'subject' 'phone' 'message'; }
+  #contact-c h1 {
+    font-size: 2rem; }
+  #main-footer {
+    height: 10rem; }
+    #main-footer .footer-content {
+      height: 90%;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-around; }
+  #about-a .about-info,
+  #about-c .cert {
+    display: flex;
+    flex-direction: column; }
+  #about-d .testimonials {
+    flex-direction: column; }
+    #about-d .testimonials > div {
+      max-width: 300px; }
+  .items {
+    grid-template-columns: 1fr; } }

@@ -1,0 +1,126 @@
+// showcase/hero image position
+@media(max-width: 1000px) {
+  #header-home {
+    height: 80vh;
+  }
+}
+
+// Tablets & smaller
+@media(max-width: 800px) {
+  #header-home {
+    height: 30rem;
+
+    .header-content {
+      //padding-top: 5rem;
+    }
+  }
+
+  // Contact
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas: 
+          'name'
+          'email'
+          'subject'
+          'phone'
+          'message';
+      }
+    }
+  }
+  // Stack grid columns and flex
+  #about-a .about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .bio-image {
+      max-width: 600px;
+    }
+  }
+  .items {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Smartphones
+@media(max-width: 500px) {
+  // Navigation
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  // Headers
+  #header {
+    &-home {
+      //height: 10rem;
+      background-position: 80% 0px;
+      
+      .header-content {
+        h1 {
+          display: none;
+        }
+      }
+    }
+
+    &-inner {
+      height: 10rem;
+    }
+  }
+
+  // Contact
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas: 
+          'name'
+          'email'
+          'subject'
+          'phone'
+          'message';
+      }
+    }
+
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    height: 10rem;
+
+    .footer-content {
+      height: 90%;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-around;
+    }
+  }
+
+  // Stack grid columns and flex
+  #about-a .about-info,
+  #about-c .cert {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-d .testimonials {
+    flex-direction: column;
+
+    & > div {
+      max-width: 300px;
+    }
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+  }
+}
