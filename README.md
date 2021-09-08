@@ -4,3 +4,4 @@ I followed Brad Traversy's Portfolio website tutorial from his Udemy course, "Mo
 
 Resources used:
 * Brad Traversy's Modern HTML & CSS From The Beginning (Including Sass)
+* [Brad's code](https://github.com/bradtraversy/modern_portfolio)
