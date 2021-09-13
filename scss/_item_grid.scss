@@ -97,3 +97,28 @@
     margin: 0;
   }
 }
+
+
+#project-b {
+  margin: 0 auto 1rem auto;
+  max-width: 700px;
+
+  .video-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  video {
+    width: 90%;
+  }
+
+  p {
+    color: red;
+  }
+}

@@ -165,6 +165,21 @@ input[class^='btn-']:hover {
     opacity: 0.7;
     margin: 0; }
 
+#project-b {
+  margin: 0 auto 1rem auto;
+  max-width: 700px; }
+  #project-b .video-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #project-b h3 {
+    text-transform: uppercase; }
+  #project-b video {
+    width: 90%; }
+  #project-b p {
+    color: red; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -219,7 +234,7 @@ img {
 
 #header-home {
   position: relative;
-  background: url("../img/showcase.jpg") no-repeat center top 10%/cover;
+  background: url("../img/showcase-min.jpg") no-repeat center top 10%/cover;
   height: 100vh;
   color: white; }
   #header-home .header-content {
@@ -244,7 +259,7 @@ img {
 
 #header-inner {
   position: relative;
-  background: url("../img/showcase.jpg") no-repeat 10% 0%/cover;
+  background: url("../img/showcase-min.jpg") no-repeat 10% 0%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #43df2e; }
 
@@ -344,14 +359,16 @@ img {
     align-items: center;
     justify-content: center; }
     #about-d .testimonials ul li:first-child {
-      margin-right: 0.5rem; }
+      margin-right: 0.5rem;
+      overflow: hidden;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px; }
   #about-d .testimonials p {
     border: 5px solid #ccc;
     border-radius: 5px;
     padding: 0.5rem; }
   #about-d .testimonials img {
-    height: 50px;
-    border-radius: 50%;
     margin-right: 0.5rem; }
 
 #contact-a .text-fields {
