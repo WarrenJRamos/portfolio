@@ -308,12 +308,6 @@ img {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
   text-align: center; }
-  #about-c .cert .item5 {
-    grid-column-start: 2;
-    grid-column-end: 3; }
-  #about-c .cert .item6 {
-    grid-column-start: 3;
-    grid-column-end: 4; }
   #about-c .cert-img-badge {
     position: relative;
     text-align: center;
